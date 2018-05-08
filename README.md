@@ -11,6 +11,8 @@ git commit -m "First commit Message"
 
 git remote add origin GitHub-repository-URL
 
+git push origin master
+
 At first glance it looks like you have got your master and Heroku parameters round the wrong way because the first parameter to git push should be the name of the remote repository, the second is refspec (normally a branch). You are more likely to have a branch called master and a remote called Heroku. But I would expect you to get a different error message if that were the case, something like:
 
 fatal: 'master' does not appear to be a git repository
@@ -32,3 +34,5 @@ If you have a remote called Heroku you should see something like:
 
 Heroku  git@heroku.youraccount:yourproject.git (fetch)
 Heroku  git@heroku.youraccount:yourproject.git (push)
+
+git push origin master
